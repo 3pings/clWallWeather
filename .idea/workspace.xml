@@ -64,6 +64,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -99,9 +100,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="400" y="139" key="CommitChangelistDialog2" timestamp="1577895620094">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="400" y="139" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1577895620094" />
     <state x="341" y="175" key="SettingsEditor" timestamp="1577894744530">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1577894744530" />
+    <state x="440" y="276" key="Vcs.Push.Dialog.v2" timestamp="1577895624903">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="440" y="276" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1577895624903" />
   </component>
 </project>
