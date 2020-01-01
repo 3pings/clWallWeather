@@ -6,8 +6,8 @@ LABEL maintainer="Justin Barksdale"
 WORKDIR ${GOPATH}/src/github.com/3pings/clWallWeather
 COPY . .
 RUN set -x && \
-    go get -d -v ./main && \
-    CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app ./main
+    go get -d -v . && \
+    CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
 
 # Get ca-certifcate
 FROM alpine:latest as certs

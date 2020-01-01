@@ -2,8 +2,8 @@ package main
 
 import (
 	"database/sql"
-	"github.com/3pings/clWall/config"
-	"github.com/3pings/clWall/weather"
+	"github.com/3pings/clWallWeather/config"
+	"github.com/3pings/clWallWeather/weather"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 	"log/syslog"
