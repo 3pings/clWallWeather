@@ -52,15 +52,15 @@ type data struct {
 	Timezone    int    `json:"timezone"`
 	ID          int    `json:"id"`
 	Name        string `json:"name"`
-	Cod         int    `json:"cod"`
+	//Cod         string `json:"cod"`
 }
 
 //Get Weather Data and place it into a Struct
-func GetWeather(key, zip, measurement string) (d data) {
+func GetWeather(key, city, measurement string) (d data) {
 	//Set Variables
 	var w data
 	baseUrl := "https://api.openweathermap.org/data/2.5/weather?"
-	url := baseUrl + "zip=" + zip + "&units=" + measurement + "&appid=" + key
+	url := baseUrl + "q=" + city + "&units=" + measurement + "&appid=" + key
 	//Build New Request
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {

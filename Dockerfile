@@ -1,22 +1,20 @@
-# Docker builder for Golang
-FROM golang as builder
-LABEL maintainer="Justin Barksdale"
+FROM golang:alpine AS build-env
 
+# Install git.
+# Git is required for fetching the dependencies.
+RUN apk update && apk add --no-cache git
 
-WORKDIR ${GOPATH}/src/github.com/3pings/clWallWeather
-COPY . .
+WORKDIR /app
+ADD . /app
 RUN set -x && \
     go get -d -v . && \
-    CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
-
-# Get ca-certifcate
-FROM alpine:latest as certs
-RUN apk --update add ca-certificates
-
-# Docker run Golang app
-FROM scratch
-LABEL maintainer="Justin Barksdale"
-COPY --from=certs /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
-WORKDIR /root/
-COPY --from=builder /go/src/github.com/3pings/clWallWeather .
-CMD ["./app"]
+    CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app . && \
+    go build -o lw-weather
+FROM alpine
+RUN apk update && \
+   apk add ca-certificates && \
+   update-ca-certificates && \
+   rm -rf /var/cache/apk/*
+WORKDIR /app
+COPY --from=build-env /app/lw-weather /app
+ENTRYPOINT ./lw-weather

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="615d9766-7b5e-4f7b-874f-e6384802e4ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/clWall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/clWall.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/weather.go" beforeDir="false" afterPath="$PROJECT_DIR$/weather/weather.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,7 @@
       <find>main</find>
     </findStrings>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.12.1/libexec" />
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.13.5/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -72,6 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -86,7 +89,18 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="clWall" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="github.com/3pings/clWallWeather" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -108,14 +122,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="added files" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="202" key="#Updates" timestamp="1577904091577">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="440" y="202" key="#Updates/0.23.1680.1027@0.23.1680.1027" timestamp="1577904091577" />
+    <state x="0" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577904308860">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="0" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1577904308860" />
     <state x="400" y="139" key="CommitChangelistDialog2" timestamp="1577895620094">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="400" y="139" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1577895620094" />
-    <state x="341" y="175" key="SettingsEditor" timestamp="1577894744530">
+    <state x="651" y="100" key="SettingsEditor" timestamp="1577904106521">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1577894744530" />
+    <state x="651" y="100" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1577904106521" />
     <state x="440" y="276" key="Vcs.Push.Dialog.v2" timestamp="1577895624903">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

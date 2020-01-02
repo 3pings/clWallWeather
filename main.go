@@ -24,8 +24,8 @@ type weatherData struct {
 
 func main() {
 	apiKey := os.Getenv("owApiKey")
-	zipCode := "15071,us"
-	units := "imperial"
+	cityCode := "Barcelona,es"
+	units := "metric"
 	//Get Weather Data
 
 	logwriter, e := syslog.New(syslog.LOG_NOTICE, "weather")
@@ -34,7 +34,7 @@ func main() {
 	}
 	for {
 		//Get Weather information from Openweathermap
-		w := weather.GetWeather(apiKey, zipCode, units)
+		w := weather.GetWeather(apiKey, cityCode, units)
 
 		//Parse fields for specific information
 		wd := weatherData{}
