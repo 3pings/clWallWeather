@@ -52,7 +52,7 @@ type data struct {
 	Timezone    int    `json:"timezone"`
 	ID          int    `json:"id"`
 	Name        string `json:"name"`
-	//Cod         string `json:"cod"`
+	Cod         string `json:"cod"`
 }
 
 //Get Weather Data and place it into a Struct
