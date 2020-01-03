@@ -52,7 +52,7 @@ func main() {
 		if id != nil {
 			log.Fatalln(id)
 		}
-		time.Sleep(120 * time.Second)
+		time.Sleep(600 * time.Second)
 	}
 }
 
