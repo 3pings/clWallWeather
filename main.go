@@ -65,7 +65,7 @@ func insertData(s *sql.DB, w weatherData) error {
 
 	_, err := s.Exec("INSERT weather(Description, Icon, Temp, Temp_min, Temp_max, Timestamp, Humidity, City) VALUES(?,?,?,?,?,?,?,?)", w.Description, w.Icon, w.Temp, w.TempMin, w.TempMax, w.Timestamp, w.Humidity, w.City)
 	log.Print("Successfully created DB record for weather info")
-
+	defer s.Close()
 	return err
 
 }
